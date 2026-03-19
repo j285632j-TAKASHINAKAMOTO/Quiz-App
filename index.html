@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>クイズアプリ</title>
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>クイズアプリ</h1>
+    <div class="controls">
+      <label>
+        難易度:
+        <select id="difficulty">
+          <option value="easy">かんたん</option>
+          <option value="medium">ふつう</option>
+          <option value="hard">むずかしい</option>
+        </select>
+      </label>
+      <button id="startBtn">開始</button>
+    </div>
+
+    <div id="quizBox" class="hidden">
+      <p id="category"></p>
+      <h2 id="question"></h2>
+      <div id="choices"></div>
+      <p id="result"></p>
+      <button id="nextBtn" class="hidden">次の問題</button>
+    </div>
+
+    <p id="score">Score: 0</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
